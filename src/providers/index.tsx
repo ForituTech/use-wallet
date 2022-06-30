@@ -1,5 +1,4 @@
 import { Provider } from '../types'
-import * as Images from '../images/index'
 
 declare global {
   interface Window {
