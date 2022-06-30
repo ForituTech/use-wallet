@@ -7,6 +7,8 @@ declare global {
   }
 }
 
+const BASE_URL = 'https://storageapi.fleek.co/aragonone-team-bucket/wallet-icons'
+
 function isElectron() {
   // See https://github.com/electron/electron/issues/2288
   return (
@@ -23,7 +25,7 @@ const PROVIDERS = new Map<string, Provider>(
       id: 'frame',
       name: 'Frame',
       type: 'Desktop',
-      image: Images.Frame,
+      image: `${BASE_URL}/Frame.png`,
       strings: {
         'your Ethereum wallet': 'Frame',
       },
@@ -32,7 +34,7 @@ const PROVIDERS = new Map<string, Provider>(
       id: 'metamask',
       name: 'Metamask',
       type: 'Desktop',
-      image: Images.Metamask,
+      image: `${BASE_URL}/Metamask.png`,
       strings: {
         'your Ethereum wallet': 'Metamask',
       },
@@ -41,7 +43,7 @@ const PROVIDERS = new Map<string, Provider>(
       id: 'status',
       name: 'Status',
       type: 'Mobile',
-      image: Images.Status,
+      image: `${BASE_URL}/Status.png`,
       strings: {
         'your Ethereum wallet': 'Status',
       },
@@ -50,7 +52,7 @@ const PROVIDERS = new Map<string, Provider>(
       id: 'cipher',
       name: 'Cipher',
       type: 'Mobile',
-      image: Images.Cipher,
+      image: `${BASE_URL}/Cipher.png`,
       strings: {
         'your Ethereum wallet': 'Cipher',
       },
@@ -59,7 +61,7 @@ const PROVIDERS = new Map<string, Provider>(
       id: 'fortmatic',
       name: 'Fortmatic',
       type: 'Any',
-      image: Images.Fortmatic,
+      image: `${BASE_URL}/Fortmatic.svg`,
       strings: {
         'your Ethereum wallet': 'Fortmatic',
       },
@@ -68,7 +70,7 @@ const PROVIDERS = new Map<string, Provider>(
       id: 'portis',
       name: 'Portis',
       type: 'Any',
-      image: Images.Portis,
+      image: `${BASE_URL}/Portis.svg`,
       strings: {
         'your Ethereum wallet': 'Portis',
       },
@@ -77,7 +79,7 @@ const PROVIDERS = new Map<string, Provider>(
       id: 'walletconnect',
       name: 'WalletConnect',
       type: 'Any',
-      image: Images.walletconnect,
+      image: `${BASE_URL}/walletconnect.png`,
       strings: {
         'your Ethereum wallet': 'WalletConnect',
       },
@@ -86,7 +88,7 @@ const PROVIDERS = new Map<string, Provider>(
       id: 'unknown',
       name: 'Unknown',
       type: 'Desktop',
-      image: Images.wallet,
+      image: `${BASE_URL}/wallet.svg`,
       strings: {
         'your Ethereum wallet': 'your wallet',
       },
